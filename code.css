@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+
+
+/*For mobile*/
+
+
+@media (max-width:600Px) {
+
+    body{
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        position: relative;
+        color: white;
+        background-color: #010718;
+    }
+
+    /* nav bar */
+
+    .navbar{
+        height: 3vh;
+        width: calc(100% - 8%);
+        /* border: 2px solid rgba(255, 251, 251, 0.931); */
+        background-color: #010512;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 3%;
+        /* position: fixed; */
+    }
+    .navbar h1{
+        font-family: "playwrite AT";
+        font-size: 1.4rem;
+    } 
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .logo2{
+        font-size: 1.7rem;
+        display: flex;
+        gap: 25px;
+    }
+
+    /* footer */
+
+
+    .menu{
+        height:5.9vh;
+        width: 100%;
+        justify-content: space-evenly;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(1, 14, 22);
+        border: 0.5px solid rgb(58, 57, 61);
+        gap: 32px;
+    }
+
+
+    /*Story*/
+
+    .story{
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 15px 2.5%;
+        background-color: #010512;
+        scroll-behavior: smooth;
+    }
+
+    .story::-webkit-scrollbar{
+        display: none   ;
+    }
+    .img{
+        flex: 0 0 auto;
+        display: flex;
+        height: 90px;
+        width: 90px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-right: 10px;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+    }
+    .img img{
+        height: 75px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid rgb(10, 216, 20);
+
+    }
+    .img p{
+        font-size: 0.7rem;
+        padding-top: 5px;
+    }
+
+
+    /* posts */
+    
+       .posts{
+        width: calc(100%);
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 80px;
+        padding-top: 10px;
+       }
+
+       .post-details{
+        width: 100%;
+        height:fit-content;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+        
+       }
+
+       .post-details img {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        
+       }
+
+       #sushil{
+        text-align: left;
+       }
+
+       #music{
+        color: rgb(7, 255, 214);
+        text-align: left;
+        font-size: 0.7rem;
+       }
+
+       .username{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content:left;
+        align-items:center;
+        padding-left: 16px;
+        padding-bottom: 10px;
+        padding-top: 3px;
+       }
+
+       .username img{
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        border: 1.7px solid #f1076c;
+        overflow: hidden;
+       }
+
+       .username div{
+        padding-left: 8px;
+       }
+       .username p{
+        font-size: 14px;
+        font-weight:550;
+       }
+       .username i{
+        color: #0095F6;
+       }
+
+       .like{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.7rem;
+       }
+
+       .likes{
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        /* padding-top: 10px; */
+        gap:14px
+       }
+       .save{
+        padding:10px 10px;
+       }
+
+       .like-by{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: left;
+        font-size: 0.8rem;
+        font-weight: bold;
+        gap: 5px;
+        margin-left: 20px;
+        margin-bottom: 25px;
+       }
+       
+       .like-by img{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+       }
+
+       #love{
+        color:#FF3040;
+       }
+       /* #comment{
+        color: rgb(1, 192, 1);
+       } */
+       /* #share{
+        color: rgb(7, 191, 242);
+       } */
+
+       video{
+        width: 100%;
+        height: auto;
+        display: block;
+       }
+
+
+
+
+    }
+
